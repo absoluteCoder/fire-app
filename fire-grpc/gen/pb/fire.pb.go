@@ -7,6 +7,7 @@
 package pb
 
 import (
+	_ "google.golang.org/genproto/googleapis/api/annotations"
 	protoreflect "google.golang.org/protobuf/reflect/protoreflect"
 	protoimpl "google.golang.org/protobuf/runtime/protoimpl"
 	reflect "reflect"
@@ -113,13 +114,13 @@ var File_proto_fire_proto protoreflect.FileDescriptor
 
 const file_proto_fire_proto_rawDesc = "" +
 	"\n" +
-	"\x10proto/fire.proto\x12\x04fire\"!\n" +
+	"\x10proto/fire.proto\x12\x04fire\x1a\x1cgoogle/api/annotations.proto\"!\n" +
 	"\vFireRequest\x12\x12\n" +
 	"\x04fuel\x18\x01 \x01(\tR\x04fuel\"(\n" +
 	"\fFireResponse\x12\x18\n" +
-	"\amessage\x18\x01 \x01(\tR\amessage2>\n" +
-	"\vFIREService\x12/\n" +
-	"\x06Ignite\x12\x11.fire.FireRequest\x1a\x12.fire.FireResponseB\bZ\x06gen/pbb\x06proto3"
+	"\amessage\x18\x01 \x01(\tR\amessage2Z\n" +
+	"\vFIREService\x12K\n" +
+	"\x06Ignite\x12\x11.fire.FireRequest\x1a\x12.fire.FireResponse\"\x1a\x82\xd3\xe4\x93\x02\x14:\x01*\"\x0f/v1/fire/igniteB\bZ\x06gen/pbb\x06proto3"
 
 var (
 	file_proto_fire_proto_rawDescOnce sync.Once

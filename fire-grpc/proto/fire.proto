@@ -4,8 +4,15 @@ package fire;
 
 option go_package = "gen/pb";
 
+import "google/api/annotations.proto";
+
 service FIREService {
-  rpc Ignite (FireRequest) returns (FireResponse);
+  rpc Ignite (FireRequest) returns (FireResponse) {
+    option (google.api.http) = {
+      post: "/v1/fire/ignite"
+      body: "*"
+    };
+  }
 }
 
 message FireRequest {
